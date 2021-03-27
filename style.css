@@ -1,0 +1,152 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark: hsl(229, 23%, 23%);
+    --dark-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+body,html{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    height: 100%;
+}
+
+.conteiner{
+    background-color: var(--dark-cyan);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ballong-top{
+    position: absolute;
+    top: -90%;
+    right: 50%;
+    z-index: 9;
+}
+
+.ballong-bottom{
+    position: absolute;
+    bottom: -90%; 
+    left: 50%;
+    z-index: 9;
+}
+
+.content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    z-index: 10;
+    width: 340px;
+    height: 375px;
+    background-color: #fff;
+    border-radius: 15px;
+    background-image: url("/home/akila/Documentos/frontend mentor/profile-card-component-main/images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-profile img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.name-profile{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--very-dark);
+    padding-top: 1rem;
+}
+
+.age-profile{
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+
+.city-profile{
+    color: var(--dark-gray);
+    font-size: 14px;
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.card-footer{
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+}
+
+.social-numbers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-social-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: .2rem;
+}
+
+.social-description{
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+a:-webkit-any-link {
+    color: hsl(228, 45%, 44%);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-line: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    margin-bottom: .5rem;
+    
+    
+}
